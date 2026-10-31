@@ -1,0 +1,6 @@
+SQLAlchemy>=2.0
+alembic>=1.13
+psycopg[binary]
+asyncpg
+python-dotenv
+pytest
