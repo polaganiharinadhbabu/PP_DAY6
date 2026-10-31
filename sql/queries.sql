@@ -1,4 +1,33 @@
 
+-- Sample customers
+INSERT INTO customers (full_name, email)
+VALUES
+    ('Asha Rao', 'asha@example.com'),
+    ('Ravi Kumar', 'ravi@example.com'),
+    ('Priya Sharma', 'priya@example.com');
+
+-- Sample products
+INSERT INTO products (product_name, price)
+VALUES
+    ('Keyboard', 1200.00),
+    ('Mouse', 500.00),
+    ('Monitor', 8500.00);
+
+-- Sample orders
+INSERT INTO orders (customer_id, amount, status)
+VALUES
+    (1, 1700.00, 'PAID'),
+    (1, 8500.00, 'NEW'),
+    (2, 500.00, 'PAID');
+
+-- Sample order items
+INSERT INTO order_items (order_id, product_id, quantity, unit_price)
+VALUES
+    (1, 1, 1, 1200.00),
+    (1, 2, 1, 500.00),
+    (2, 3, 1, 8500.00),
+    (3, 2, 1, 500.00);
+
 -- 1. Retrieve customers
 SELECT customer_id, full_name, email
 FROM customers
